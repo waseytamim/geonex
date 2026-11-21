@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#102b24">
+<title>GeoNexa | Personal Geospatial Learning & Research Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#home">
+      <span class="brand-mark">G<span>✦</span></span>
+      <span><b>GeoNexa</b><small>PERSONAL RESEARCH HUB</small></span>
+    </a>
+    <div class="profile-mini">
+      <div class="avatar">WA</div>
+      <div><b>My Workspace</b><small>Soil & Environmental Sciences</small></div>
+    </div>
+    <nav class="nav">
+      <p class="nav-label">WORKSPACE</p>
+      <a class="nav-link active" href="#home" data-page="home"><span>⌂</span> Overview</a>
+      <a class="nav-link" href="#curriculum" data-page="curriculum"><span>▤</span> Master Curriculum</a>
+      <a class="nav-link" href="#classroom" data-page="classroom"><span>▣</span> Learning Classroom</a>
+      <a class="nav-link" href="#tasks" data-page="tasks"><span>✓</span> Tasks & Assignments</a>
+      <p class="nav-label">RESEARCH</p>
+      <a class="nav-link" href="#projects" data-page="projects"><span>⌘</span> Research Projects</a>
+      <a class="nav-link" href="#journal" data-page="journal"><span>✎</span> Research Journal</a>
+      <a class="nav-link" href="#resources" data-page="resources"><span>◎</span> Resource Library</a>
+      <p class="nav-label">PERSONAL</p>
+      <a class="nav-link" href="#notes" data-page="notes"><span>▧</span> My Notes</a>
+      <a class="nav-link" href="#settings" data-page="settings"><span>⚙</span> Settings & Backup</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="focus-card"><span class="focus-icon">✦</span><b>One step at a time.</b><p>Build skills. Create evidence. Grow as a researcher.</p></div>
+      <small class="version">GEONEXA • PERSONAL EDITION 1.0</small>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="mobile-menu" id="menuBtn" aria-label="Open menu">☰</button>
+      <div class="crumb">MY WORKSPACE <span>/</span> <b id="pageCrumb">Overview</b></div>
+      <div class="top-actions"><span class="private-pill"><i></i> Personal workspace</span><button class="icon-btn" id="quickAdd" title="Quick note">＋</button></div>
+    </header>
+
+    <section class="page active" id="page-home">
+      <div class="welcome-row">
+        <div><p class="eyebrow">YOUR GEOSPATIAL JOURNEY</p><h1>Welcome to <em>GeoNexa.</em></h1><p class="subhead">A focused space for learning, exploring and building your research portfolio.</p></div>
+        <div class="date-chip"><span>◷</span><div><small>TARGET MILESTONE</small><b>30 June 2027</b></div></div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-copy"><span class="hero-kicker">LEARN · EXPLORE · ANALYSE · RESEARCH</span><h2>Turn curiosity into<br><i>research capability.</i></h2><p>One structured learning journey across GIS, Remote Sensing, Soil Science, Python and environmental research.</p><button class="primary-btn" data-go="curriculum">Explore my curriculum <span>↗</span></button></div>
+        <div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="earth">🌍</div><span class="map-tag tag-a">GIS</span><span class="map-tag tag-b">REMOTE SENSING</span><span class="map-tag tag-c">SOIL SCIENCE</span><div class="contour contour-a"></div><div class="contour contour-b"></div></div>
+      </div>
+      <div class="section-heading"><div><p class="eyebrow">YOUR PROGRESS</p><h2>Learning overview</h2></div><span class="muted">Updates as you complete lessons</span></div>
+      <div class="stats-grid">
+        <div class="stat-card"><div class="stat-top"><span>Curriculum progress</span><span class="stat-icon green">↗</span></div><strong id="progressPercent">0%</strong><div class="progress-track"><span id="progressBar"></span></div><small id="progressText">0 of 31 weeks started</small></div>
+        <div class="stat-card"><div class="stat-top"><span>Completed lessons</span><span class="stat-icon blue">▣</span></div><strong id="lessonCount">0</strong><small>Lessons marked complete</small></div>
+        <div class="stat-card"><div class="stat-top"><span>Study hours</span><span class="stat-icon amber">◷</span></div><strong id="hoursCount">0.0</strong><small>Total hours you have logged</small></div>
+        <div class="stat-card"><div class="stat-top"><span>Active projects</span><span class="stat-icon violet">⌘</span></div><strong id="projectCount">0</strong><small>Projects in your workspace</small></div>
+      </div>
+      <div class="home-columns">
+        <div class="panel">
+          <div class="panel-head"><div><p class="eyebrow">YOUR ROADMAP</p><h3>Learning phases</h3></div><a href="#curriculum">View all ↗</a></div>
+          <div id="phasePreview" class="phase-preview"></div>
+        </div>
+        <div class="panel next-panel">
+          <div class="panel-head"><div><p class="eyebrow">RECOMMENDED NEXT STEP</p><h3>Start with the foundations</h3></div><span class="spark">✦</span></div>
+          <p class="next-desc">Understand what GIS is, how spatial data works and how maps become useful evidence for environmental decisions.</p>
+          <div class="next-meta"><span>WEEK 01</span><span>GIS Foundations</span><span>Beginner</span></div>
+          <button class="secondary-btn" data-go="classroom">Open first lesson <span>→</span></button>
+        </div>
+      </div>
+      <div class="quote-strip"><span>“</span><p>Research is built through consistent learning, careful analysis and honest evidence.</p><small>GEONEXA PRINCIPLE</small></div>
+    </section>
+
+    <section class="page" id="page-curriculum">
+      <div class="page-title"><p class="eyebrow">31-WEEK LEARNING ROADMAP</p><h1>Master Curriculum</h1><p class="subhead">A progressive path from GIS beginner to research-ready geospatial skills.</p></div>
+      <div class="notice"><b>Learning target:</b> 30 June 2027 <span>Suggested pace: 3–4 hours/day, 6 days/week. Adjust the pace when needed.</span></div>
+      <div class="phase-list" id="phaseList"></div>
+    </section>
+
+    <section class="page" id="page-classroom">
+      <div class="page-title"><p class="eyebrow">LEARN BY DOING</p><h1>Learning Classroom</h1><p class="subhead">Your first lesson is ready. Mark it complete when you finish.</p></div>
+      <div class="lesson-layout">
+        <div class="panel lesson-main"><div class="lesson-tag">CLASS 01 · GIS FOUNDATIONS</div><h2>What is Geographic Information System (GIS)?</h2><p class="lesson-lead">GIS is a framework for collecting, managing, analysing and visualising data that is connected to locations on Earth.</p><h3>Learning objectives</h3><ul><li>Explain GIS in your own words.</li><li>Identify the five core components of GIS.</li><li>Distinguish spatial and non-spatial data.</li><li>Understand the difference between vector and raster data.</li></ul><h3>The five components of GIS</h3><div class="component-grid"><div><b>01 · Hardware</b><small>Computers, GPS devices and servers.</small></div><div><b>02 · Software</b><small>QGIS, ArcGIS and related tools.</small></div><div><b>03 · Data</b><small>Maps, satellite imagery and attributes.</small></div><div><b>04 · People</b><small>Analysts, researchers and decision-makers.</small></div><div><b>05 · Methods</b><small>Standards and workflows for analysis.</small></div></div><h3>Key concepts</h3><p><b>Spatial data</b> describes where something is located, such as a river line or soil sampling point. <b>Non-spatial data</b> describes its properties, such as soil pH, sample ID or land-use category.</p><p><b>Vector data</b> represents features as points, lines and polygons. <b>Raster data</b> represents information as a grid of cells, such as satellite imagery or elevation.</p><div class="lesson-callout">Remember: GIS is not just digital mapping. It connects location-based data with analysis to help answer real-world questions.</div><h3>Your first practical task</h3><ol><li>Install QGIS when you are ready.</li><li>Create a folder named <code>GeoNexa_Projects</code>.</li><li>Write one example of GIS use in soil or environmental science.</li></ol><button class="primary-btn" id="completeLesson">✓ Mark lesson as complete</button></div>
+        <aside class="panel lesson-side"><p class="eyebrow">LESSON DETAILS</p><div class="detail-row"><small>Module</small><b>GIS Foundations</b></div><div class="detail-row"><small>Level</small><b>Beginner</b></div><div class="detail-row"><small>Estimated time</small><b>45–60 minutes</b></div><div class="detail-row"><small>Progress</small><b id="lessonStatus">Not started</b></div><hr><p class="eyebrow">QUICK CHECK</p><p class="quiz-q">Which GIS component includes QGIS?</p><div class="quiz-options"><button class="quiz-option" data-answer="People">People</button><button class="quiz-option" data-answer="Software">Software</button><button class="quiz-option" data-answer="Data">Data</button></div><p id="quizFeedback" class="quiz-feedback"></p></aside>
+      </div>
+    </section>
+
+    <section class="page" id="page-tasks">
+      <div class="page-title"><p class="eyebrow">STAY CONSISTENT</p><h1>Tasks & Assignments</h1><p class="subhead">Keep track of practical exercises and small weekly milestones.</p></div>
+      <div class="panel">
+        <div class="panel-head"><h3>My task list</h3><button class="secondary-btn small" id="addTask">＋ Add task</button></div>
+        <form id="taskForm" class="inline-form hidden"><input id="taskInput" placeholder="Write a task..." required><button class="primary-btn">Add</button></form>
+        <div id="taskList" class="task-list"></div>
+      </div>
+      <div class="panel assignment-panel"><p class="eyebrow">FIRST ASSIGNMENT</p><h3>GIS Foundations — Reflection</h3><p>Write 150–200 words explaining how GIS could help investigate a soil or environmental problem in your area.</p><span class="status-label">NOT STARTED</span></div>
+    </section>
+
+    <section class="page" id="page-projects">
+      <div class="page-title"><p class="eyebrow">BUILD YOUR RESEARCH PROFILE</p><h1>Research Projects</h1><p class="subhead">Organise ideas and document your work. Add real findings only after analysis.</p></div>
+      <div class="project-grid" id="projectGrid"></div>
+      <div class="panel add-project"><h3>Add a project idea</h3><form id="projectForm" class="project-form"><input id="projectName" placeholder="Project title" required><select id="projectCategory"><option>GIS</option><option>Remote Sensing</option><option>Soil Science</option><option>Hydrology</option><option>GeoAI</option></select><textarea id="projectDesc" placeholder="Research question or short description"></textarea><button class="primary-btn">＋ Save project idea</button></form></div>
+    </section>
+
+    <section class="page" id="page-journal">
+      <div class="page-title"><p class="eyebrow">THINK LIKE A RESEARCHER</p><h1>Research Journal</h1><p class="subhead">Capture questions, observations, literature notes and research ideas.</p></div>
+      <div class="panel"><form id="journalForm" class="journal-form"><input id="journalTitle" placeholder="Entry title" required><select id="journalType"><option>Research idea</option><option>Literature note</option><option>Learning reflection</option><option>Research question</option></select><textarea id="journalBody" rows="5" placeholder="Write your entry here..." required></textarea><button class="primary-btn">Save journal entry</button></form></div>
+      <div id="journalEntries" class="entry-list"></div>
+    </section>
+
+    <section class="page" id="page-resources">
+      <div class="page-title"><p class="eyebrow">TRUSTED LEARNING MATERIAL</p><h1>Resource Library</h1><p class="subhead">Official documentation and free learning resources to support your journey.</p></div>
+      <div class="resource-grid">
+        <a class="resource-card" href="https://qgis.org/" target="_blank" rel="noopener"><span class="resource-icon">⌖</span><small>GIS SOFTWARE</small><b>QGIS Official</b><p>Open-source geographic information system and documentation.</p><span>Visit resource ↗</span></a>
+        <a class="resource-card" href="https://www.qgistutorials.com/" target="_blank" rel="noopener"><span class="resource-icon">▤</span><small>GIS TUTORIALS</small><b>QGIS Tutorials</b><p>Practical tutorials for learning common GIS workflows.</p><span>Visit resource ↗</span></a>
+        <a class="resource-card" href="https://developers.google.com/earth-engine" target="_blank" rel="noopener"><span class="resource-icon">🌐</span><small>REMOTE SENSING</small><b>Google Earth Engine</b><p>Documentation and guides for cloud-based geospatial analysis.</p><span>Visit resource ↗</span></a>
+        <a class="resource-card" href="https://www.earthdata.nasa.gov/data/projects/arset" target="_blank" rel="noopener"><span class="resource-icon">◉</span><small>NASA TRAINING</small><b>NASA ARSET</b><p>Applied remote sensing training and learning materials.</p><span>Visit resource ↗</span></a>
+        <a class="resource-card" href="https://earthexplorer.usgs.gov/" target="_blank" rel="noopener"><span class="resource-icon">▧</span><small>EARTH OBSERVATION</small><b>USGS EarthExplorer</b><p>Search and access Earth observation datasets.</p><span>Visit resource ↗</span></a>
+        <a class="resource-card" href="https://dataspace.copernicus.eu/" target="_blank" rel="noopener"><span class="resource-icon">◌</span><small>SATELLITE DATA</small><b>Copernicus Data Space</b><p>Access Copernicus Earth observation data services.</p><span>Visit resource ↗</span></a>
+        <a class="resource-card" href="https://geopandas.org/en/stable/getting_started.html" target="_blank" rel="noopener"><span class="resource-icon">⌘</span><small>PYTHON</small><b>GeoPandas</b><p>Getting started with geospatial data analysis in Python.</p><span>Visit resource ↗</span></a>
+        <a class="resource-card" href="https://www.isric.org/explore/soilgrids" target="_blank" rel="noopener"><span class="resource-icon">♧</span><small>SOIL DATA</small><b>SoilGrids</b><p>Global gridded soil information from ISRIC.</p><span>Visit resource ↗</span></a>
+      </div>
+    </section>
+
+    <section class="page" id="page-notes">
+      <div class="page-title"><p class="eyebrow">YOUR PRIVATE SPACE</p><h1>My Notes</h1><p class="subhead">Save quick learning notes and reminders in this browser.</p></div>
+      <div class="panel"><form id="noteForm" class="journal-form"><input id="noteTitle" placeholder="Note title" required><textarea id="noteBody" rows="5" placeholder="Write your note..." required></textarea><button class="primary-btn">Save note</button></form></div><div id="notesList" class="entry-list"></div>
+    </section>
+
+    <section class="page" id="page-settings">
+      <div class="page-title"><p class="eyebrow">WORKSPACE PREFERENCES</p><h1>Settings & Backup</h1><p class="subhead">Manage your local data and keep a backup of your progress.</p></div>
+      <div class="panel settings-panel"><h3>Personal workspace</h3><p>This first version stores your notes, tasks and progress in this browser on this device. It does not create an online account.</p><div class="privacy-note"><b>Privacy note</b><p>Anyone with access to this browser profile may be able to access this local workspace. Do not store passwords, sensitive documents or confidential research data here.</p></div><div class="settings-actions"><button class="primary-btn" id="exportData">↓ Export my backup</button><label class="secondary-btn file-label">↑ Import backup<input type="file" id="importData" accept="application/json" hidden></label><button class="danger-btn" id="resetData">Reset workspace</button></div></div>
+      <div class="panel"><h3>About GeoNexa</h3><p><b>GeoNexa — Personal Geospatial Learning & Research Hub</b></p><p>Learn. Explore. Analyse. Research.</p><small class="muted">Version 1.0 · Personal edition · Target milestone: 30 June 2027</small></div>
+    </section>
+    <footer class="footer"><span>© 2026 GeoNexa · Personal workspace</span><span>Learn with purpose. Research with integrity.</span></footer>
+  </main>
+</div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
